@@ -1,0 +1,522 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		305B61B31D71EA46000C9A2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305B61B21D71EA46000C9A2C /* AppDelegate.swift */; };
+		305B61B51D71EA46000C9A2C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305B61B41D71EA46000C9A2C /* ViewController.swift */; };
+		305B61B81D71EA46000C9A2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 305B61B61D71EA46000C9A2C /* Main.storyboard */; };
+		305B61BB1D71EA46000C9A2C /* Blue_Bean_Dropper.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 305B61B91D71EA46000C9A2C /* Blue_Bean_Dropper.xcdatamodeld */; };
+		305B61BD1D71EA46000C9A2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 305B61BC1D71EA46000C9A2C /* Assets.xcassets */; };
+		305B61C01D71EA46000C9A2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 305B61BE1D71EA46000C9A2C /* LaunchScreen.storyboard */; };
+		305B61CB1D71EA46000C9A2C /* Blue_Bean_DropperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305B61CA1D71EA46000C9A2C /* Blue_Bean_DropperTests.swift */; };
+		305B61D61D71EA46000C9A2C /* Blue_Bean_DropperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305B61D51D71EA46000C9A2C /* Blue_Bean_DropperUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		305B61C71D71EA46000C9A2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 305B61A71D71EA46000C9A2C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 305B61AE1D71EA46000C9A2C;
+			remoteInfo = "Blue Bean Dropper";
+		};
+		305B61D21D71EA46000C9A2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 305B61A71D71EA46000C9A2C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 305B61AE1D71EA46000C9A2C;
+			remoteInfo = "Blue Bean Dropper";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		305B61AF1D71EA46000C9A2C /* Blue Bean Dropper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Blue Bean Dropper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		305B61B21D71EA46000C9A2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		305B61B41D71EA46000C9A2C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		305B61B71D71EA46000C9A2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		305B61BA1D71EA46000C9A2C /* Blue_Bean_Dropper.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Blue_Bean_Dropper.xcdatamodel; sourceTree = "<group>"; };
+		305B61BC1D71EA46000C9A2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		305B61BF1D71EA46000C9A2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		305B61C11D71EA46000C9A2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		305B61C61D71EA46000C9A2C /* Blue Bean DropperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Blue Bean DropperTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		305B61CA1D71EA46000C9A2C /* Blue_Bean_DropperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blue_Bean_DropperTests.swift; sourceTree = "<group>"; };
+		305B61CC1D71EA46000C9A2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		305B61D11D71EA46000C9A2C /* Blue Bean DropperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Blue Bean DropperUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		305B61D51D71EA46000C9A2C /* Blue_Bean_DropperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blue_Bean_DropperUITests.swift; sourceTree = "<group>"; };
+		305B61D71D71EA46000C9A2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		305B61AC1D71EA46000C9A2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		305B61C31D71EA46000C9A2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		305B61CE1D71EA46000C9A2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		305B61A61D71EA46000C9A2C = {
+			isa = PBXGroup;
+			children = (
+				305B61B11D71EA46000C9A2C /* Blue Bean Dropper */,
+				305B61C91D71EA46000C9A2C /* Blue Bean DropperTests */,
+				305B61D41D71EA46000C9A2C /* Blue Bean DropperUITests */,
+				305B61B01D71EA46000C9A2C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		305B61B01D71EA46000C9A2C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				305B61AF1D71EA46000C9A2C /* Blue Bean Dropper.app */,
+				305B61C61D71EA46000C9A2C /* Blue Bean DropperTests.xctest */,
+				305B61D11D71EA46000C9A2C /* Blue Bean DropperUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		305B61B11D71EA46000C9A2C /* Blue Bean Dropper */ = {
+			isa = PBXGroup;
+			children = (
+				305B61B21D71EA46000C9A2C /* AppDelegate.swift */,
+				305B61B41D71EA46000C9A2C /* ViewController.swift */,
+				305B61B61D71EA46000C9A2C /* Main.storyboard */,
+				305B61BC1D71EA46000C9A2C /* Assets.xcassets */,
+				305B61BE1D71EA46000C9A2C /* LaunchScreen.storyboard */,
+				305B61C11D71EA46000C9A2C /* Info.plist */,
+				305B61B91D71EA46000C9A2C /* Blue_Bean_Dropper.xcdatamodeld */,
+			);
+			path = "Blue Bean Dropper";
+			sourceTree = "<group>";
+		};
+		305B61C91D71EA46000C9A2C /* Blue Bean DropperTests */ = {
+			isa = PBXGroup;
+			children = (
+				305B61CA1D71EA46000C9A2C /* Blue_Bean_DropperTests.swift */,
+				305B61CC1D71EA46000C9A2C /* Info.plist */,
+			);
+			path = "Blue Bean DropperTests";
+			sourceTree = "<group>";
+		};
+		305B61D41D71EA46000C9A2C /* Blue Bean DropperUITests */ = {
+			isa = PBXGroup;
+			children = (
+				305B61D51D71EA46000C9A2C /* Blue_Bean_DropperUITests.swift */,
+				305B61D71D71EA46000C9A2C /* Info.plist */,
+			);
+			path = "Blue Bean DropperUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		305B61AE1D71EA46000C9A2C /* Blue Bean Dropper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 305B61DA1D71EA46000C9A2C /* Build configuration list for PBXNativeTarget "Blue Bean Dropper" */;
+			buildPhases = (
+				305B61AB1D71EA46000C9A2C /* Sources */,
+				305B61AC1D71EA46000C9A2C /* Frameworks */,
+				305B61AD1D71EA46000C9A2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Blue Bean Dropper";
+			productName = "Blue Bean Dropper";
+			productReference = 305B61AF1D71EA46000C9A2C /* Blue Bean Dropper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		305B61C51D71EA46000C9A2C /* Blue Bean DropperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 305B61DD1D71EA46000C9A2C /* Build configuration list for PBXNativeTarget "Blue Bean DropperTests" */;
+			buildPhases = (
+				305B61C21D71EA46000C9A2C /* Sources */,
+				305B61C31D71EA46000C9A2C /* Frameworks */,
+				305B61C41D71EA46000C9A2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				305B61C81D71EA46000C9A2C /* PBXTargetDependency */,
+			);
+			name = "Blue Bean DropperTests";
+			productName = "Blue Bean DropperTests";
+			productReference = 305B61C61D71EA46000C9A2C /* Blue Bean DropperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		305B61D01D71EA46000C9A2C /* Blue Bean DropperUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 305B61E01D71EA46000C9A2C /* Build configuration list for PBXNativeTarget "Blue Bean DropperUITests" */;
+			buildPhases = (
+				305B61CD1D71EA46000C9A2C /* Sources */,
+				305B61CE1D71EA46000C9A2C /* Frameworks */,
+				305B61CF1D71EA46000C9A2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				305B61D31D71EA46000C9A2C /* PBXTargetDependency */,
+			);
+			name = "Blue Bean DropperUITests";
+			productName = "Blue Bean DropperUITests";
+			productReference = 305B61D11D71EA46000C9A2C /* Blue Bean DropperUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		305B61A71D71EA46000C9A2C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "John Riselvato";
+				TargetAttributes = {
+					305B61AE1D71EA46000C9A2C = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					305B61C51D71EA46000C9A2C = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 305B61AE1D71EA46000C9A2C;
+					};
+					305B61D01D71EA46000C9A2C = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 305B61AE1D71EA46000C9A2C;
+					};
+				};
+			};
+			buildConfigurationList = 305B61AA1D71EA46000C9A2C /* Build configuration list for PBXProject "Blue Bean Dropper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 305B61A61D71EA46000C9A2C;
+			productRefGroup = 305B61B01D71EA46000C9A2C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				305B61AE1D71EA46000C9A2C /* Blue Bean Dropper */,
+				305B61C51D71EA46000C9A2C /* Blue Bean DropperTests */,
+				305B61D01D71EA46000C9A2C /* Blue Bean DropperUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		305B61AD1D71EA46000C9A2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				305B61C01D71EA46000C9A2C /* LaunchScreen.storyboard in Resources */,
+				305B61BD1D71EA46000C9A2C /* Assets.xcassets in Resources */,
+				305B61B81D71EA46000C9A2C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		305B61C41D71EA46000C9A2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		305B61CF1D71EA46000C9A2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		305B61AB1D71EA46000C9A2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				305B61BB1D71EA46000C9A2C /* Blue_Bean_Dropper.xcdatamodeld in Sources */,
+				305B61B51D71EA46000C9A2C /* ViewController.swift in Sources */,
+				305B61B31D71EA46000C9A2C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		305B61C21D71EA46000C9A2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				305B61CB1D71EA46000C9A2C /* Blue_Bean_DropperTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		305B61CD1D71EA46000C9A2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				305B61D61D71EA46000C9A2C /* Blue_Bean_DropperUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		305B61C81D71EA46000C9A2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 305B61AE1D71EA46000C9A2C /* Blue Bean Dropper */;
+			targetProxy = 305B61C71D71EA46000C9A2C /* PBXContainerItemProxy */;
+		};
+		305B61D31D71EA46000C9A2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 305B61AE1D71EA46000C9A2C /* Blue Bean Dropper */;
+			targetProxy = 305B61D21D71EA46000C9A2C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		305B61B61D71EA46000C9A2C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				305B61B71D71EA46000C9A2C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		305B61BE1D71EA46000C9A2C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				305B61BF1D71EA46000C9A2C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		305B61D81D71EA46000C9A2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		305B61D91D71EA46000C9A2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		305B61DB1D71EA46000C9A2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Blue Bean Dropper/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jdriselvato.Blue-Bean-Dropper";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		305B61DC1D71EA46000C9A2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Blue Bean Dropper/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jdriselvato.Blue-Bean-Dropper";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		305B61DE1D71EA46000C9A2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Blue Bean DropperTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jdriselvato.Blue-Bean-DropperTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Blue Bean Dropper.app/Blue Bean Dropper";
+			};
+			name = Debug;
+		};
+		305B61DF1D71EA46000C9A2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Blue Bean DropperTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jdriselvato.Blue-Bean-DropperTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Blue Bean Dropper.app/Blue Bean Dropper";
+			};
+			name = Release;
+		};
+		305B61E11D71EA46000C9A2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Blue Bean DropperUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jdriselvato.Blue-Bean-DropperUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Blue Bean Dropper";
+			};
+			name = Debug;
+		};
+		305B61E21D71EA46000C9A2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Blue Bean DropperUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jdriselvato.Blue-Bean-DropperUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Blue Bean Dropper";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		305B61AA1D71EA46000C9A2C /* Build configuration list for PBXProject "Blue Bean Dropper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				305B61D81D71EA46000C9A2C /* Debug */,
+				305B61D91D71EA46000C9A2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		305B61DA1D71EA46000C9A2C /* Build configuration list for PBXNativeTarget "Blue Bean Dropper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				305B61DB1D71EA46000C9A2C /* Debug */,
+				305B61DC1D71EA46000C9A2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		305B61DD1D71EA46000C9A2C /* Build configuration list for PBXNativeTarget "Blue Bean DropperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				305B61DE1D71EA46000C9A2C /* Debug */,
+				305B61DF1D71EA46000C9A2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		305B61E01D71EA46000C9A2C /* Build configuration list for PBXNativeTarget "Blue Bean DropperUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				305B61E11D71EA46000C9A2C /* Debug */,
+				305B61E21D71EA46000C9A2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		305B61B91D71EA46000C9A2C /* Blue_Bean_Dropper.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				305B61BA1D71EA46000C9A2C /* Blue_Bean_Dropper.xcdatamodel */,
+			);
+			currentVersion = 305B61BA1D71EA46000C9A2C /* Blue_Bean_Dropper.xcdatamodel */;
+			path = Blue_Bean_Dropper.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 305B61A71D71EA46000C9A2C /* Project object */;
+}
