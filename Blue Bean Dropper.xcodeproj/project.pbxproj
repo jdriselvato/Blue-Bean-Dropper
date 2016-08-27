@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		305B61B31D71EA46000C9A2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305B61B21D71EA46000C9A2C /* AppDelegate.swift */; };
 		305B61B51D71EA46000C9A2C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305B61B41D71EA46000C9A2C /* ViewController.swift */; };
-		305B61B81D71EA46000C9A2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 305B61B61D71EA46000C9A2C /* Main.storyboard */; };
 		305B61BB1D71EA46000C9A2C /* Blue_Bean_Dropper.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 305B61B91D71EA46000C9A2C /* Blue_Bean_Dropper.xcdatamodeld */; };
 		305B61BD1D71EA46000C9A2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 305B61BC1D71EA46000C9A2C /* Assets.xcassets */; };
 		305B61C01D71EA46000C9A2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 305B61BE1D71EA46000C9A2C /* LaunchScreen.storyboard */; };
@@ -38,7 +37,6 @@
 		305B61AF1D71EA46000C9A2C /* Blue Bean Dropper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Blue Bean Dropper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		305B61B21D71EA46000C9A2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		305B61B41D71EA46000C9A2C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		305B61B71D71EA46000C9A2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		305B61BA1D71EA46000C9A2C /* Blue_Bean_Dropper.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Blue_Bean_Dropper.xcdatamodel; sourceTree = "<group>"; };
 		305B61BC1D71EA46000C9A2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		305B61BF1D71EA46000C9A2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -101,7 +99,6 @@
 			children = (
 				305B61B21D71EA46000C9A2C /* AppDelegate.swift */,
 				305B61B41D71EA46000C9A2C /* ViewController.swift */,
-				305B61B61D71EA46000C9A2C /* Main.storyboard */,
 				305B61BC1D71EA46000C9A2C /* Assets.xcassets */,
 				305B61BE1D71EA46000C9A2C /* LaunchScreen.storyboard */,
 				305B61C11D71EA46000C9A2C /* Info.plist */,
@@ -196,6 +193,7 @@
 				TargetAttributes = {
 					305B61AE1D71EA46000C9A2C = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 56LME28RR4;
 					};
 					305B61C51D71EA46000C9A2C = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -234,7 +232,6 @@
 			files = (
 				305B61C01D71EA46000C9A2C /* LaunchScreen.storyboard in Resources */,
 				305B61BD1D71EA46000C9A2C /* Assets.xcassets in Resources */,
-				305B61B81D71EA46000C9A2C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +294,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		305B61B61D71EA46000C9A2C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				305B61B71D71EA46000C9A2C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		305B61BE1D71EA46000C9A2C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -403,10 +392,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Blue Bean Dropper/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jdriselvato.Blue-Bean-Dropper";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -414,10 +406,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Blue Bean Dropper/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jdriselvato.Blue-Bean-Dropper";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -486,6 +481,7 @@
 				305B61DC1D71EA46000C9A2C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		305B61DD1D71EA46000C9A2C /* Build configuration list for PBXNativeTarget "Blue Bean DropperTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +490,7 @@
 				305B61DF1D71EA46000C9A2C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		305B61E01D71EA46000C9A2C /* Build configuration list for PBXNativeTarget "Blue Bean DropperUITests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +499,7 @@
 				305B61E21D71EA46000C9A2C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
