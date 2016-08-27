@@ -14,14 +14,6 @@ class ViewController: UIViewController, CBPeripheralDelegate, CBCentralManagerDe
     var centralManager : CBCentralManager!
     var peripheral : CBPeripheral!
     
-    init() {
-        super.init(nibName: nil, bundle: nil)
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.redColor()
@@ -37,8 +29,7 @@ class ViewController: UIViewController, CBPeripheralDelegate, CBCentralManagerDe
             print("Resetting")
         case .PoweredOn:
             print("Powered On")
-            startScan()
-        // start scan
+            startScan() // start scan
         case .PoweredOff:
             print("Powered Off")
         }
@@ -61,7 +52,12 @@ class ViewController: UIViewController, CBPeripheralDelegate, CBCentralManagerDe
     
     func centralManager(central: CBCentralManager, didConnectPeripheral peripheral: CBPeripheral) {
         print("connected to \(peripheral)")
-        //        centralManager.stopScan()
+        
+        if peripheral.name == "Bean" {
+            self.view.backgroundColor = UIColor.greenColor()
+            centralManager.stopScan() // stop searching after we connect to the device we want
+        }
+
         print("Available services:\(peripheral.services)")
         peripheral.discoverServices(nil)
         
@@ -95,6 +91,14 @@ class ViewController: UIViewController, CBPeripheralDelegate, CBCentralManagerDe
     func startScan(){
         print("Scanning...")
         centralManager.scanForPeripheralsWithServices(nil, options: nil)
+    }
+    
+    init() {
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
     
     override func didReceiveMemoryWarning() {
