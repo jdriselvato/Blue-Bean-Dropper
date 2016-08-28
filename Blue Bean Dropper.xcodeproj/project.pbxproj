@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3004D3B91D7278910065A40D /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3004D3B81D7278910065A40D /* ViewModel.swift */; };
+		3004D3BB1D72789D0065A40D /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3004D3BA1D72789D0065A40D /* Model.swift */; };
 		305B61B31D71EA46000C9A2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305B61B21D71EA46000C9A2C /* AppDelegate.swift */; };
 		305B61B51D71EA46000C9A2C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305B61B41D71EA46000C9A2C /* ViewController.swift */; };
 		305B61BB1D71EA46000C9A2C /* Blue_Bean_Dropper.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 305B61B91D71EA46000C9A2C /* Blue_Bean_Dropper.xcdatamodeld */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3004D3B81D7278910065A40D /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		3004D3BA1D72789D0065A40D /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		305B61AF1D71EA46000C9A2C /* Blue Bean Dropper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Blue Bean Dropper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		305B61B21D71EA46000C9A2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		305B61B41D71EA46000C9A2C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -98,6 +102,8 @@
 			isa = PBXGroup;
 			children = (
 				305B61B21D71EA46000C9A2C /* AppDelegate.swift */,
+				3004D3BA1D72789D0065A40D /* Model.swift */,
+				3004D3B81D7278910065A40D /* ViewModel.swift */,
 				305B61B41D71EA46000C9A2C /* ViewController.swift */,
 				305B61BC1D71EA46000C9A2C /* Assets.xcassets */,
 				305B61BE1D71EA46000C9A2C /* LaunchScreen.storyboard */,
@@ -256,8 +262,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3004D3BB1D72789D0065A40D /* Model.swift in Sources */,
 				305B61BB1D71EA46000C9A2C /* Blue_Bean_Dropper.xcdatamodeld in Sources */,
 				305B61B51D71EA46000C9A2C /* ViewController.swift in Sources */,
+				3004D3B91D7278910065A40D /* ViewModel.swift in Sources */,
 				305B61B31D71EA46000C9A2C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
