@@ -9,6 +9,7 @@
 // I use Dweet to update values to a fake server
 // Watch Dweet: https://dweet.io/get/latest/dweet/for/Blue-Bean-Drop
 // Post Dweet: https://dweet.io:443/dweet/for/Blue-Bean-Drop
+// bluetooth-central in plist to sync data in background
 
 
 import UIKit
@@ -17,6 +18,9 @@ import CoreBluetooth
 class ViewController: UIViewController, CBPeripheralDelegate, CBCentralManagerDelegate {
     var centralManager : CBCentralManager!
     var peripheral : CBPeripheral!
+    
+    let beanAdvertisedUUID = CBUUID(string: "A495FF10-C5B1-4B44-B512-1370F02D74DE")
+    let beanScratchServiceUUID = CBUUID(string: "A495FF20-C5B1-4B44-B512-1370F02D74DE")
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,22 +45,25 @@ class ViewController: UIViewController, CBPeripheralDelegate, CBCentralManagerDe
     
     func startScan(){
         print("Scanning...")
-        centralManager.scanForPeripheralsWithServices(nil, options: nil)
+        centralManager.scanForPeripheralsWithServices([
+            beanAdvertisedUUID
+            ], options: nil)
+        
     }
     
     func centralManager(central: CBCentralManager, didDiscoverPeripheral peripheral: CBPeripheral, advertisementData: [String : AnyObject], RSSI: NSNumber) {
-        print("Discovered: \(peripheral.name) at \(RSSI)")
-        print("AdvertisementData:\(advertisementData)")
+        print("> Discovered: \(peripheral.name) at \(RSSI) & AdvertisementData:\(advertisementData)")
         
         if self.peripheral != peripheral && peripheral.name == "Bean" {
             self.peripheral = peripheral
             self.peripheral.delegate = self
-            centralManager.connectPeripheral(peripheral, options: nil)
+            centralManager.connectPeripheral(
+                peripheral,
+                options: [
+                    CBConnectPeripheralOptionNotifyOnNotificationKey : true,
+                    CBCentralManagerOptionRestoreIdentifierKey: "BlueBeanDropperCentralManagerIdentifier"
+                ])
         }
-    }
-    
-    func centralManager(central: CBCentralManager, didFailToConnectPeripheral peripheral: CBPeripheral, error: NSError?) {
-        print("Failed to connect \(peripheral) cause of \(error)")
     }
     
     func centralManager(central: CBCentralManager, didConnectPeripheral peripheral: CBPeripheral) {
@@ -64,8 +71,19 @@ class ViewController: UIViewController, CBPeripheralDelegate, CBCentralManagerDe
         
         self.view.backgroundColor = UIColor.greenColor()
         centralManager.stopScan() // stop searching after we connect to the device we want
-        print("Available services:\(peripheral.services)")
         peripheral.discoverServices(nil)
+        
+        self.peripheral(peripheral, didDiscoverServices: nil)
+    }
+    
+    func centralManager(central: CBCentralManager, didFailToConnectPeripheral peripheral: CBPeripheral, error: NSError?) {
+        print("Failed to connect \(peripheral) cause of \(error)")
+    }
+    
+    func centralManager(central: CBCentralManager, didDisconnectPeripheral peripheral: CBPeripheral, error: NSError?) {
+        print("didDisconnectPeripheral")
+        self.centralManager.connectPeripheral(self.peripheral, options: nil)
+        self.view.backgroundColor = UIColor.redColor()
     }
     
     func peripheral(peripheral: CBPeripheral, didDiscoverIncludedServicesForService service: CBService, error: NSError?) {
@@ -74,6 +92,7 @@ class ViewController: UIViewController, CBPeripheralDelegate, CBCentralManagerDe
     
     func peripheral(peripheral: CBPeripheral, didDiscoverServices error: NSError?) {
         print("Services and error: \(error)")
+        print("Available services:\(peripheral.services)")
         if let services = peripheral.services {
             for service in services {
                 peripheral.discoverCharacteristics(nil, forService: service)
@@ -99,6 +118,13 @@ class ViewController: UIViewController, CBPeripheralDelegate, CBCentralManagerDe
         }
     }
     
+    func centralManager(central: CBCentralManager, willRestoreState dict: [String : AnyObject]) {
+        if let peripherals:[CBPeripheral] = dict[CBCentralManagerRestoredStatePeripheralsKey] as! [CBPeripheral]! {
+            print("CentralManager#willRestoreState \(peripherals)")
+        }
+    }
+    
+    
     func sendCountDweet(count: String) {
         let thing = "Blue-Bean-Drop"
         let URL = NSURL(string: "https://dweet.io/dweet/for/\(thing)?drop=\(count)&callback=dweetCallback.callback0")
@@ -122,8 +148,6 @@ class ViewController: UIViewController, CBPeripheralDelegate, CBCentralManagerDe
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    
 }
 
 extension NSData {
