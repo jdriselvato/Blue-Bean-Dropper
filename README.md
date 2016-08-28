@@ -1,5 +1,11 @@
 # Blue-Bean-Dropper
 
+This iOS application is a proof of concept to better my understanding of BLE communication with CoreBluetooth.
+
+This app communicates with Lightblue Bean so that when the Bean is dropped the app uploads the drop count value to a personal Freeboard (https://freeboard.io/board/1jPodr). In addition, the app will sync the drop count when the app is in the background. 
+
+Still working on seeing if it's possible to sync the drop count when the app is completely closed (user closes it in the processing tray).
+
 # LightBlue Bean Code
 ````
 /* 
