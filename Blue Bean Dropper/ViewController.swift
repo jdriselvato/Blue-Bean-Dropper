@@ -14,10 +14,12 @@
 
 import UIKit
 import CoreBluetooth
+import WebKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, WKNavigationDelegate {
     let viewModel: ViewModel
-    
+    var webView : WKWebView!
+
     init(viewModel: ViewModel) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
@@ -25,7 +27,14 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.redColor()
+        
+        let url = NSURL(string: "https://freeboard.io/board/1jPodr")
+        let request = NSURLRequest(URL: url!)
+        
+        self.webView = WKWebView(frame: self.view.frame)
+        self.webView.navigationDelegate = self
+        self.webView.loadRequest(request)
+        self.view.addSubview(webView)
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -34,7 +43,6 @@ class ViewController: UIViewController {
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 }
 

@@ -104,8 +104,10 @@ class ViewModel: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate {
         print("characteristic changed: \(characteristic)")
         
         if let stringValue = characteristic.value!.hexString {
-            print("Sending Dweet count: \(stringValue)")
-            self.sendCountDweet(stringValue)
+            let trimed = stringValue.stringByTrimmingCharactersInSet(NSCharacterSet(charactersInString: "000000"))
+            let result = UInt8(strtoul("\(trimed)", nil, 16))
+            print("Sending Dweet count: \(result)")
+            self.sendCountDweet("\(result)")
         }
     }
     
